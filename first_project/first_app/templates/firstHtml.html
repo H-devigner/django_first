@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The title of the html page</title>
+    </head>
+    <body>
+        <h1>Hello world, this is a first html file in django!</h1>
+        <p>I hope you're all doing fine</p>
+
+        <article>
+            <title>These are the data from the database: </title>
+            <ul>
+                {% for person_item in person_data %}
+                <li>
+                    <a href = "details/{{person_item.id}}">
+                        <b>First Name</b> : {{ person_item.firstName }}, <b>Last Name: </b>{{ person_item.lastName }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </article>
+    </body>
+</html>

@@ -26,4 +26,4 @@ def details(request, id):
 
 def main_page(request):
     template = loader.get_template('main.html')
-    return HttpResponse(template.render(request))
+    return HttpResponse(template.render()) # the main view /

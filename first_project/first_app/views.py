@@ -27,3 +27,10 @@ def details(request, id):
 def main_page(request):
     template = loader.get_template('main.html')
     return HttpResponse(template.render()) # the main view /
+
+def testing(request):
+    template = loader.get_template('template.html')
+    context = {
+        'list' : ['item1', 'item2', 'item3', 'item4']
+    }
+    return HttpResponse(template.render(request, context))

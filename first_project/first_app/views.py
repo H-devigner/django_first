@@ -23,3 +23,7 @@ def details(request, id):
         'person_item': person_item
     }
     return HttpResponse(template.render(context, request))
+
+def main_page(request):
+    template = loader.get_template('main.html')
+    return HttpResponse(template.render(request))

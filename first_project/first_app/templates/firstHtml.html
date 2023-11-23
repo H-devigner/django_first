@@ -3,17 +3,17 @@
 {% block title %} The data about people {% endblock %}
 
 {% block content %}
-        <article>
-            <title>These are the data from the database: </title>
-            <ul>
-                {% for person_item in person_data %}
-                <li>
-                    <a href = "details/{{person_item.id}}">
-                        <b>First Name</b> : {{ person_item.firstName }}, <b>Last Name: </b>{{ person_item.lastName }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </article>
+  <article>
+    <title>These are the data from the database: </title>
+    <ul>
+        {% for person_item in person_data %}
+        <li>
+            <a href = "details/{{person_item.id}}">
+                <b>First Name</b> : {{ person_item.firstName }}, <b>Last Name: </b>{{ person_item.lastName }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+  </article>
 {% endblock %}
 <!-- just added this comment to test github connectivity -->

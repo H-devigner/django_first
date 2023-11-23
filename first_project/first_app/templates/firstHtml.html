@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>The title of the html page</title>
-    </head>
-    <body>
+{% extends 'master.html' %}
+
+{% block title %} The data about people {% endblock %}
+
+{% block content %}
         <h1>Hello world, this is a first html file in django!</h1>
         <p>I hope you're all doing fine</p>
 
@@ -19,6 +18,5 @@
                 {% endfor %}
             </ul>
         </article>
-    </body>
-</html>
+{% endblock %}
 <!-- just added this comment to test github connectivity -->
